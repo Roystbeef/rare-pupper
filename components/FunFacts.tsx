@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 import { Zap, Heart, Music, Award, Clock, Smile } from 'lucide-react'
 
 const stats = [
