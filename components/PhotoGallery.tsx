@@ -4,32 +4,32 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const photos = [
   {
-    src: 'https://rarepupper.com/images/head-back.png',
+    src: '/images/head-back.png',
     caption: 'Professional head-tilting pose',
     hearts: 347,
   },
   {
-    src: 'https://rarepupper.com/images/sleepy.png',
+    src: '/images/sleepy.png',
     caption: 'Tongue-out sleeping beauty',
     hearts: 892,
   },
   {
-    src: 'https://rarepupper.com/images/pawing.png',
+    src: '/images/pawing.png',
     caption: 'String cheese appreciation moment',
     hearts: 1205,
   },
   {
-    src: 'https://rarepupper.com/images/laundry.png',
+    src: '/images/laundry.png',
     caption: 'Blanket burrow headquarters',
     hearts: 654,
   },
   {
-    src: 'https://rarepupper.com/images/tortugas.png',
+    src: '/images/tortugas.png',
     caption: 'Tortuga and the tortugas',
     hearts: 428,
   },
   {
-    src: 'https://rarepupper.com/images/leafs.png',
+    src: '/images/leafs.png',
     caption: 'Leaf hunting expedition',
     hearts: 733,
   },

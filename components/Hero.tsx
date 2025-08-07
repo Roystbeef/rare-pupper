@@ -19,7 +19,7 @@ export function Hero() {
         >
           <div className="relative inline-block">
             <ImageWithFallback
-              src="https://rarepupper.com/images/profile.png"
+              src="/images/profile.png"
               alt="Tortie the chihuahua-rat terrier mix"
               className="object-cover mx-auto border-8 border-white rounded-full shadow-2xl w-80 h-80"
             />
