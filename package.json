@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://terragon-labs.github.io/terragon-labs-site",
+  "homepage": "https://roystbeef.github.io/rare-pupper",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

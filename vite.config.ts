@@ -9,7 +9,7 @@ export default defineConfig({
       '@': resolve(import.meta.dirname, './')
     }
   },
-  base: '/terragon-labs-site/',
+  base: '/rare-pupper/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
