@@ -22,7 +22,7 @@ export function PawPrints() {
         y: Math.random() * 100,
         delay: Math.random() * 10,
         duration: 10 + Math.random() * 20,
-        size: 0.5 + Math.random() * 1
+        size: 1.0 + Math.random() * 2
       })
     }
     setPawPrints(prints)
@@ -33,7 +33,7 @@ export function PawPrints() {
       {pawPrints.map((print) => (
         <motion.div
           key={print.id}
-          className="absolute text-amber-200/30"
+          className="absolute text-amber-200/20"
           style={{
             left: `${print.x}%`,
             top: `${print.y}%`,
@@ -43,7 +43,7 @@ export function PawPrints() {
             y: [0, -20, 0],
             x: [0, 10, -10, 0],
             rotate: [0, 360],
-            opacity: [0.3, 0.6, 0.3]
+            opacity: [0.1, 0.3, 0.1]
           }}
           transition={{
             duration: print.duration,
