@@ -65,7 +65,7 @@ export function Footer() {
             transition={{ delay: 0.5 }}
             viewport={{ once: true }}
           >
-            <p>© 2024 RarePupper.com • A shrine to Tortie • String cheese not included</p>
+            <p>© {new Date().getFullYear()} RarePupper.com • A shrine to Tortie • String cheese not included</p>
           </motion.div>
         </motion.div>
       </div>
