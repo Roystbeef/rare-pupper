@@ -33,7 +33,7 @@ export function PawPrints() {
       {pawPrints.map((print) => (
         <motion.div
           key={print.id}
-          className="absolute text-amber-200/20"
+          className="absolute text-amber-200/10"
           style={{
             left: `${print.x}%`,
             top: `${print.y}%`,
@@ -43,7 +43,7 @@ export function PawPrints() {
             y: [0, -20, 0],
             x: [0, 10, -10, 0],
             rotate: [0, 360],
-            opacity: [0.1, 0.3, 0.1]
+            opacity: [0.05, 0.15, 0.05]
           }}
           transition={{
             duration: print.duration,
