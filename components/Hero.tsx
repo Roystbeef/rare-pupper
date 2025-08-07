@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { useIsMobile } from './ui/use-mobile';
 
 export function Hero() {
+  const isMobile = useIsMobile();
+  
   return (
     <section className="relative flex items-center justify-center min-h-screen px-6">
       <div className="max-w-6xl mx-auto text-center">
@@ -90,19 +93,21 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="absolute transform -translate-x-1/2 bottom-10 left-1/2"
-        >
-          <div className="flex justify-center w-6 h-10 border-2 rounded-full border-amber-600">
-            <motion.div
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="w-1 h-3 mt-2 rounded-full bg-amber-600"
-            />
-          </div>
-        </motion.div>
+{!isMobile && (
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="absolute transform -translate-x-1/2 bottom-10 left-1/2"
+          >
+            <div className="flex justify-center w-6 h-10 border-2 rounded-full border-amber-600">
+              <motion.div
+                animate={{ y: [0, 12, 0] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="w-1 h-3 mt-2 rounded-full bg-amber-600"
+              />
+            </div>
+          </motion.div>
+        )}
       </div>
     </section>
   );
