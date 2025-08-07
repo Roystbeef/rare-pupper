@@ -1,5 +1,4 @@
-import { motion } from 'motion/react'
-import { Heart, Camera, Music, Zap } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { Hero } from './components/Hero'
 import { PersonalityCards } from './components/PersonalityCards'
 import { PhotoGallery } from './components/PhotoGallery'

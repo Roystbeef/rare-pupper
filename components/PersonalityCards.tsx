@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 import { Heart, Music, Zap, Moon, Users, Leaf } from 'lucide-react'
 
 const personalities = [
