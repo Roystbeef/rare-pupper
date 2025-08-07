@@ -84,8 +84,8 @@ export function PersonalityCards() {
                 y: 0,
                 transition: { 
                   type: "spring",
-                  stiffness: 300,
-                  damping: 15
+                  stiffness: 600,
+                  damping: 20
                 }
               }}
               viewport={{ once: true }}
