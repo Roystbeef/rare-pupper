@@ -34,7 +34,7 @@ A delightful interactive website showcasing Tortie, a charismatic chihuahua-rat 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd terragon-labs-site
+cd isle-of-tortuga
 ```
 
 2. Install dependencies:
@@ -113,7 +113,7 @@ This will build the project and deploy it to the `gh-pages` branch.
 
 ## 📝 License
 
-This project is private and belongs to Terragon Labs.
+This project is open source and available under the MIT License.
 
 ---
 
