@@ -79,6 +79,15 @@ export function PersonalityCards() {
                   damping: 10
                 }
               }}
+              animate={{ 
+                scale: 1,
+                y: 0,
+                transition: { 
+                  type: "spring",
+                  stiffness: 300,
+                  damping: 15
+                }
+              }}
               viewport={{ once: true }}
               className="group cursor-pointer"
             >
