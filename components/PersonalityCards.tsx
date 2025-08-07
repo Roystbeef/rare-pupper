@@ -73,12 +73,16 @@ export function PersonalityCards() {
               whileHover={{ 
                 scale: 1.05,
                 y: -10,
-                transition: { duration: 0.2 }
+                transition: { 
+                  type: "spring",
+                  stiffness: 400,
+                  damping: 10
+                }
               }}
               viewport={{ once: true }}
               className="group cursor-pointer"
             >
-              <div className={`bg-gradient-to-br ${trait.color} p-8 rounded-3xl shadow-xl relative overflow-hidden`}>
+              <div className={`bg-gradient-to-br ${trait.color} p-8 rounded-3xl shadow-xl relative overflow-hidden h-72 flex flex-col`}>
                 <motion.div
                   animate={{ 
                     rotate: [0, 10, -10, 0],
@@ -100,7 +104,7 @@ export function PersonalityCards() {
                   {trait.title}
                 </h3>
                 
-                <p className="text-white/90 leading-relaxed">
+                <p className="text-white/90 leading-relaxed flex-grow">
                   {trait.description}
                 </p>
 
