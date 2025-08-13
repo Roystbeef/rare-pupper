@@ -127,10 +127,10 @@ export function FunFacts() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-center justify-between"
+                  className="grid grid-cols-[10rem,1fr,3.5rem] items-center gap-4"
                 >
-                  <span className="text-lg text-green-800">{love.item}</span>
-                  <div className="flex-1 mx-4 bg-green-200 rounded-full h-3 overflow-hidden">
+                  <span className="text-lg text-green-800 whitespace-nowrap">{love.item}</span>
+                  <div className="bg-green-200 rounded-full h-3 overflow-hidden">
                     <motion.div
                       className="h-full bg-gradient-to-r from-green-400 to-green-600"
                       initial={{ width: 0 }}
@@ -139,7 +139,7 @@ export function FunFacts() {
                       viewport={{ once: true }}
                     />
                   </div>
-                  <span className="text-sm text-green-600 font-medium">{love.intensity}%</span>
+                  <span className="text-sm text-green-600 font-medium text-right tabular-nums">{love.intensity}%</span>
                 </motion.div>
               ))}
             </div>
@@ -177,10 +177,10 @@ export function FunFacts() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-center justify-between"
+                  className="grid grid-cols-[10rem,1fr,3.5rem] items-center gap-4"
                 >
-                  <span className="text-lg text-red-800">{fear.item}</span>
-                  <div className="flex-1 mx-4 bg-red-200 rounded-full h-3 overflow-hidden">
+                  <span className="text-lg text-red-800 whitespace-nowrap">{fear.item}</span>
+                  <div className="bg-red-200 rounded-full h-3 overflow-hidden">
                     <motion.div
                       className="h-full bg-gradient-to-r from-red-400 to-red-600"
                       initial={{ width: 0 }}
@@ -189,7 +189,7 @@ export function FunFacts() {
                       viewport={{ once: true }}
                     />
                   </div>
-                  <span className="text-sm text-red-600 font-medium">{fear.intensity}%</span>
+                  <span className="text-sm text-red-600 font-medium text-right tabular-nums">{fear.intensity}%</span>
                 </motion.div>
               ))}
             </div>
